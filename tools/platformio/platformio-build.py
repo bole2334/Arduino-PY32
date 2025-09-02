@@ -175,7 +175,7 @@ def get_arduino_board_id(board_config, mcu):
     # Default boards
     boards_remap = load_boards_remap()
     board_id = env.subst("$BOARD")
-    if board_id == "PY32F002Ax5" or board_id == "AIR001_DEV" or board_id == "AIR32F103CB" or board_id == "AIR401_DEV" :
+    if board_id == "PY32F003" or board_id == "PY32F002Ax5" or board_id == "AIR001_DEV" or board_id == "AIR32F103CB" or board_id == "AIR401_DEV" :
         return board_id
 
     if board_id in boards_remap:
